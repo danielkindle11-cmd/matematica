@@ -1,11 +1,122 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Meu Site no GitHub</title>
+    <title>Estrutura do Site de Matemática</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 20mm;
+            background-color: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: #2c3e50;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #00796b;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        h1 { margin: 0; font-size: 22pt; }
+        h2 {
+            color: #00796b;
+            font-size: 18pt;
+            border-bottom: 2px solid #e0f2f1;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        .menu-list {
+            list-style: none;
+            padding-left: 20px;
+        }
+        .menu-item {
+            margin-bottom: 12px;
+            padding: 5px 0;
+        }
+        .menu-item a {
+            color: #00897b;
+            text-decoration: none;
+            font-size: 12pt;
+            font-weight: 500;
+        }
+        .menu-item a:hover {
+            text-decoration: underline;
+        }
+        .code-container {
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-top: 40px;
+            border-radius: 5px;
+        }
+        .code-title {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        pre {
+            font-family: 'Courier New', monospace;
+            font-size: 9pt;
+            white-space: pre-wrap;
+            color: #d81b60;
+        }
+    </style>
 </head>
 <body>
-    <h1>Olá, Mundo!</h1>
-    <p>Esta página está hospedada no GitHub Pages.</p>
+    <div class="header">
+        <h1>Meu Portal de Matemática</h1>
+    </div>
+
+    <div class="container">
+        <h2>Puzzle [Quebra cabeça]</h2>
+        <ul class="menu-list">
+            <li class="menu-item"><a href="#">Triângulo equilátero</a></li>
+            <li class="menu-item"><a href="#">O quadrado e o retângulo</a></li>
+            <li class="menu-item"><a href="#">Área do círculo</a></li>
+            <li class="menu-item"><a href="#">Raio e circunferência</a></li>
+            <li class="menu-item"><a href="#">Quadrados</a></li>
+            <li class="menu-item"><a href="#">Dodecágono</a></li>
+            <li class="menu-item"><a href="#">Triângulos</a></li>
+        </ul>
+
+        <h2>Exercícios Resolvidos</h2>
+        <ul class="menu-list">
+            <li class="menu-item"><a href="#">Ângulos centrais</a></li>
+            <li class="menu-item"><a href="#">Comprimento do Arco</a></li>
+            <li class="menu-item"><a href="#">Raio e semicircunferência</a></li>
+        </ul>
+
+        <h2>Quiz</h2>
+        <ul class="menu-list">
+            <li class="menu-item"><a href="#">Teorema de Pitágoras (Quiz)</a></li>
+        </ul>
+
+        <h2>Sobre</h2>
+        <ul class="menu-list">
+            <li class="menu-item"><a href="#">Sobre...</a></li>
+        </ul>
+
+        <div class="code-container">
+            <span class="code-title">Dica de Código para o seu index.html:</span>
+            <pre>
+&lt;!-- Exemplo de como linkar seus arquivos --&gt;
+&lt;h2&gt;Exercícios Resolvidos&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="angulos.html"&gt;Ângulos centrais&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+            </pre>
+        </div>
+    </div>
 </body>
 </html>
